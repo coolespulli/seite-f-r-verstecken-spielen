@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer und Wörter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <h2>Timer</h2>
+            <div id="timers">
+                <button onclick="startTimer(1)">1 min</button>
+                <button onclick="startTimer(2)">2 min</button>
+                <button onclick="startTimer(3)">3 min</button>
+                <button onclick="startTimer(4)">4 min</button>
+                <button onclick="startTimer(5)">5 min</button>
+                <button onclick="startTimer(6)">6 min</button>
+                <button onclick="startTimer(7)">7 min</button>
+                <button onclick="startTimer(8)">8 min</button>
+                <button onclick="startTimer(9)">9 min</button>
+                <button onclick="startTimer(10)">10 min</button>
+            </div>
+            <div id="timerDisplay"></div>
+        </div>
+        
+        <div class="word-container">
+            <h2>Zufälliges Wort</h2>
+            <div id="randomWordDisplay"></div>
+            <button onclick="selectRandomWord()">Zufälliges Wort auswählen</button>
+        </div>
+    </div>
+
+    <audio id="alarmSound" src="alarm.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+
